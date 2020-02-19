@@ -32,7 +32,7 @@ type Chassis struct {
 	VtepLogicalSwitches []string
 }
 
-func (odbi *ovndb) chassisAddImp(name string, hostname string, etype []string, ip string) (*OvnCommand, error) {
+func (odbi *ovndb) chassisAddImp(name string, hostname string, etype string, ip string) (*OvnCommand, error) {
 	// / Prepare for encap record
 	enCapUUID, err := newRowUUID()
 	if err != nil {
