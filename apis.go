@@ -76,6 +76,7 @@ type OVNSignal interface {
 	onMeterBandCreate(band *MeterBand)
 	onMeterBandDelete(band *MeterBand)
 
+	// Chassis if for ovn  sb db
 	onChassisCreate(ch *Chassis)
 	onChassisDelete(ch *Chassis)
 }

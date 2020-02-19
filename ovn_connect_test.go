@@ -17,14 +17,7 @@
 package goovn
 
 import (
-	"crypto/tls"
-	"crypto/x509"
-	"fmt"
-	"log"
 	"os"
-	"strconv"
-	"strings"
-	"testing"
 )
 
 const (
@@ -64,7 +57,7 @@ func getOVNDB() (db string) {
 	return dbNB
 }
 
-func TestMain(m *testing.M) {
+/*unc TestMain(m *testing.M) {
 	var api Client
 	var err error
 	db = getOVNDB()
@@ -133,6 +126,9 @@ func TestMain(m *testing.M) {
 			}
 		}
 	}
+	// oopen both connections nbapi and sbapi
+	// convert this to helper function to set db and connect so each test have their own connection
 	ovndbapi = api
+
 	os.Exit(m.Run())
-}
+}*/
